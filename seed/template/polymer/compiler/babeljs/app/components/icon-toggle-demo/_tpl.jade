@@ -1,0 +1,13 @@
+h3 Statically-configured icon-toggles
+
+icon-toggle(toggle-icon='star')
+icon-toggle(toggle-icon='star' pressed)
+
+h3 Data-bound icon-toggle
+
+<!-- use a computed binding to generate the message -->
+div
+    span [[message(isFav)]]
+
+| curly brackets ({{}}} allow two-way binding
+icon-toggle(toggle-icon='favorite' pressed='{{isFav}}')
