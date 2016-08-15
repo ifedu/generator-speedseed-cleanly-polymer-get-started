@@ -1,4 +1,6 @@
-### v.0.1.0
+### v.0.2.0
+
+## Build your first Polymer element
 
 ### Requeriments
 - NodeJS >= 6.0.0
@@ -8,11 +10,10 @@
 - [Spanish](#spanish)
 
 ### Changelog
-- [Changelog](https://github.com/ifedu/generator-speedseed-polymer-whitespace/blob/master/CHANGELOG.md)
+- [Changelog](https://github.com/ifedu/generator-speedseed-cleanly-polymer-get-started/blob/master/CHANGELOG.md)
 
 ### English
-    - Template Speedseed Polymer with whitespace syntax (SaSS + Jade/Pug)
-
+    - Template Speedseed based in Get Started with Polymer + Styleguide Cleanly
 
 ### Spanish
-    - Plantilla Speedseed Polymer con whitespace syntax (SaSS + Jade/Pug)
+    - Plantilla Speedseed basada en Get Started con Polymer + Styleguide Cleanly

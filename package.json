@@ -1,9 +1,9 @@
 {
-    "description": "Template generator-speedseed-polymer-whitespace",
-    "homepage": "https://github.com/ifedu/generator-speedseed-polymer-whitespace",
+    "description": "Template generator-speedseed-cleanly-polymer-get-started",
+    "homepage": "https://github.com/ifedu/generator-speedseed-cleanly-polymer-get-started",
     "main": "generators/app/index.js",
-    "name": "generator-speedseed-polymer-whitespace",
-    "version": "0.1.0",
+    "name": "generator-speedseed-cleanly-polymer-get-started",
+    "version": "0.2.0",
 
     "keywords": [
         "yeoman-generator"
@@ -12,11 +12,11 @@
     "author": {
         "name": "Eduardo Pérez-Bermejo",
         "email": "ifedu@outlook.com",
-        "url": "http://www.github.com/ifedu/generator-speedseed-polymer-whitespace"
+        "url": "http://www.github.com/ifedu/generator-speedseed-cleanly-polymer-get-started"
     },
 
     "dependencies": {
-        "speedseed": "^0.13.0",
+        "speedseed": "^0.15.0",
         "yeoman-generator": "^0.23.4"
     },
 
@@ -26,6 +26,6 @@
 
     "repository": {
         "type": "git",
-        "url": "https://github.com/ifedu/generator-speedseed-polymer-whitespace"
+        "url": "https://github.com/ifedu/generator-speedseed-cleanly-polymer-get-started"
     }
 }
