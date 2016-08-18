@@ -10,6 +10,10 @@ module.exports = {
 
         css: [
             { name: 'SaSS', value: 'sass' }
+        ],
+
+        html: [
+            { name: 'Jade', value: 'jade' }
         ]
     },
 

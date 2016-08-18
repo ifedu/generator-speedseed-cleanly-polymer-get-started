@@ -1,4 +1,4 @@
-### v.0.2.0
+### v.0.2.1
 
 ## Build your first Polymer element
 
