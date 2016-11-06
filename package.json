@@ -1,9 +1,9 @@
 {
-    "description": "Template generator-speedseed-cleanly-polymer-get-started",
+    "description": "Template generator-speedseed-cleanly-polymer-get-started for https://www.npmjs.com/package/generator-speedseed",
     "homepage": "https://github.com/ifedu/generator-speedseed-cleanly-polymer-get-started",
     "main": "generators/app/index.js",
     "name": "generator-speedseed-cleanly-polymer-get-started",
-    "version": "0.2.1",
+    "version": "0.3.0",
 
     "keywords": [
         "yeoman-generator"
@@ -16,7 +16,7 @@
     },
 
     "dependencies": {
-        "speedseed": "^0.17.0",
+        "speedseed": "^0.18.0",
         "yeoman-generator": "^0.23.4"
     },
 

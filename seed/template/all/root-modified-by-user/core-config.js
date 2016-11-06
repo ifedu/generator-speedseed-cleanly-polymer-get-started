@@ -1,5 +1,8 @@
 module.exports = ($) => {
-    const coreConfigJson = {
+    const speedseed = require('speedseed')
+    const file = new speedseed.Files()
+
+    const optionsGeneral = {
         'app': {
             'folder': 'app',
             'inFolder': {
@@ -40,9 +43,6 @@ module.exports = ($) => {
             ],
             'exclude': [],
             'files': [
-                './-build/js/**/*.js',
-                './-build/components/**/*.js',
-                './-tmp/**/*.spec.js'
             ],
             'preprocessors': {}
         },
@@ -67,21 +67,43 @@ module.exports = ($) => {
         }
     }
 
-    const getFramework = {}
+    file.extendFromUser(optionsGeneral, './core-config.json')
+    file.extendFromOptions($, optionsGeneral.test.files, {
+        framework: {
+            angularjs: [
+                './node_modules/angular/angular.min.js',
+                './node_modules/angular-mocks/angular-mocks.js',
+                './-build/js/**/*.js',
+                './-build/components/**/*.js',
+                './-tmp/**/*.spec.js'
+            ],
 
-    const vendors = getFramework[$.framework] || []
-    const testFiles = coreConfigJson.test.files
+            angular2: [
+                './node_modules/core-js/client/shim.min.js',
+                './node_modules/zone.js/dist/zone.js',
+                './node_modules/reflect-metadata/Reflect.js',
+                './node_modules/systemjs/dist/system.src.js',
+                './-build/js/**/*.js',
+                './-build/components/**/*.js',
+                './-tmp/**/*.spec.js'
+            ],
 
-    coreConfigJson.test.files = []
+            jquery: [
+                './node_modules/jquery/dist/jquery.min.js',
+                './-build/js/**/*.js',
+                './-build/components/**/*.js',
+                './-tmp/**/*.spec.js'
+            ],
 
-    vendors.forEach((vendor) => coreConfigJson.test.files.push(vendor))
-    testFiles.forEach((testFile) => coreConfigJson.test.files.push(testFile))
+            react: [
+                './node_modules/react/dist/react-with-addons.min.js',
+                './node_modules/react-dom/dist/react-dom.min.js',
+                './-build/js/**/*.js',
+                './-build/components/**/*.js',
+                './-tmp/**/*.spec.js'
+            ]
+        }
+    })
 
-    const speedseed = require('speedseed')
-
-    const file = new speedseed.Files()
-
-    file.readFile('core-config.json', coreConfigJson)
-
-    file.writeFile('core-config.json', 4, coreConfigJson)
+    file.writeFile('core-config.json', optionsGeneral, 2)
 }
