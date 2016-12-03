@@ -1,0 +1,2 @@
+- Template for generator-speedseed
+- Template Speedseed based in Get Started with Polymer + Styleguide Cleanly

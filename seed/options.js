@@ -1,29 +1,31 @@
+const set = (name, value, extra, exclude) => ({ name, value, extra, exclude })
+
 module.exports = [{
     message: 'Library / Framework?',
     name: 'framework',
 
     choices: [
-        { name: 'Polymer', value: 'polymer' }
+        set('Polymer', 'polymer')
     ]
 }, {
     message: 'HTML?',
     name: 'html',
 
     choices: [
-        { name: 'Jade', value: 'jade' }
+        set('Jade', 'jade')
     ]
 }, {
     message: 'JS?',
     name: 'js',
 
     choices: [
-        { name: 'BabelJS', value: 'babeljs', extra: 'js' }
+        set('BabelJS', 'babeljs', 'js')
     ]
 }, {
     message: 'CSS?',
     name: 'css',
 
     choices: [
-        { name: 'SaSS', value: 'sass', extra: 'sass' }
+        set('SaSS', 'sass', 'sass')
     ]
 }]
