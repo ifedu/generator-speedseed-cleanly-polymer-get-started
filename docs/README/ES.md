@@ -1,2 +1,0 @@
-- Plantilla para generator-speedseed
-- Plantilla Speedseed basada en Get Started con Polymer + Styleguide Cleanly
