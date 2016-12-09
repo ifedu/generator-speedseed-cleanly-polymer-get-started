@@ -1,3 +1,6 @@
+### v.1.0.1
+    - Cambios en el README
+
 ### v.1.0.0
     - Actualizado a generator-speedseed v.0.24.0
     - Actualizado a speedseed v.0.21.0
